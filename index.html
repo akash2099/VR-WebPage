@@ -9,10 +9,16 @@
 
 </head>
 <body>
-    <!-- <img src="https://static.wixstatic.com/media/78c2eb_0f3d88ee33a44e439254f84b0521a0ae~mv2.jpg" alt=""/> -->
+
     <a-scene>
-        <img id="panorama" src="machu-picchu.jpg"/>
+        <a-assets>
+            <img id="panorama" class="imgo" src="machu-picchu.jpg" crossorigin="anonymous"
+                />
+        </a-assets>
         <a-sky src="#panorama" rotation="0 -90 0"></a-sky>
+        <a-entity position="0 0 1.5">
+            <a-camera></a-camera>
+        </a-entity>
     </a-scene>
     
 </body>
